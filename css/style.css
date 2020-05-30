@@ -1,0 +1,119 @@
+/* =====================================
+# General
+======================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+/* =====================================
+# Navigation
+======================================*/
+
+.navbar-brand {
+    font-family: 'Marmelad', sans-serif;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar .collapse {
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 4px;
+}
+
+/* =====================================
+# Header Dashboard
+======================================*/
+
+#dashboard {
+    background: #d3d3d3;
+}
+
+/* #dashboard .fa-cog {
+    font-size: 2.8rem;
+} */
+
+#dashboard .display-4 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+@media (max-width: 567px) {
+    #dashboard .fa-cog {
+        font-size: 2.5rem;
+    }
+    #dashboard .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* =====================================
+# Section Add
+======================================*/
+
+#add .fa-plus {
+    font-size: 12px;
+}
+
+#add .btn {
+    font-family: 'Advent Pro', sans-serif;
+}
+
+@media (max-width: 768px) {
+    #add .btn {
+        margin-bottom: 10px;
+    }
+}
+
+/* =====================================
+# Section Admin-Panel
+======================================*/
+
+#admin-panel .card {
+    font-family: 'Advent Pro', sans-serif;
+}
+
+@media (min-width: 768px) {
+    #admin-panel #card-table {
+        margin-top: -192px;
+    }
+}
+
+@media (min-width: 900px) {
+    #admin-panel #card-table {
+        margin-top: -125px;
+    }
+}
+
+@media (max-width:760px) {
+    #admin-panel #card-table {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+/* =====================================
+# Footer
+======================================*/
+
+footer {
+    font-family: 'Marvel', sans-serif;
+    font-size: 17px;
+    color: #908e8e;
+    overflow-x: hidden;
+}
+
+footer .fab {
+    color: #767676;
+    transition: all 1s;
+}
+
+footer .fab:hover {
+    color: #808080;
+    transition: all 1s;
+}
