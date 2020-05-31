@@ -24,13 +24,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/category.css">
 </head>
 
-<body id="home">
+<body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark py-0 fixed-top">
         <div class="container">
-            <a href="#home" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+            <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <i class="navbar-toggler-icon"></i>
             </button>
@@ -40,7 +40,7 @@
                         <a href="index.html" class="nav-link">Dashboard</a>
                     </li>
                     <li class="nav-item active px-2">
-                        <a href="#home" class="nav-link">Team</a>
+                        <a href="teams.html" class="nav-link">Teams</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="categories.html" class="nav-link">Categories</a>
@@ -52,17 +52,17 @@
                         <a href="#" class="nav-link">Reports</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="#" class="nav-link">Attendance</a>
+                        <a href="attendance.html" class="nav-link">Attendance</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown mr-3">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            <i class="fas fa-user"></i> Welcome Elizabeth
+                            <i class="fas fa-user-alt"></i> Welcome Elizabeth
                         </a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">
+                            <a href="edit_profile.html" class="dropdown-item">
                                 <i class="fas fa-user-circle"></i> Profile
                             </a>
                             <a href="#" class="dropdown-item">
@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="text-info">
-                        <i class="fas fa-users text-dark"></i> Team
+                        <i class="fas fa-users-cog text-dark"></i> Edit Team
                     </h1>
                 </div>
             </div>
@@ -95,13 +95,15 @@
             <section id="add" class="py-4 bg-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 ml-auto">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Team...">
-                                <div class="input-group-append">
-                                    <button class="btn btn-info">Search</button>
-                                </div>
-                            </div>
+                        <div class="col-md-3">
+                            <a href="index.html" class="btn btn-muted btn-block">
+                                <i class="fas fa-arrow-circle-left text-dark"></i> Back To Dashboard
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn btn-danger btn-block">
+                                <i class="fas fa-trash-alt text-light"></i> Delete Team
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -109,111 +111,54 @@
 
             <section id="admin-panel" class="py-4">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-center flex-wrap flex-column">
-                            <div class="card" id="card-table">
+                    <div class="row pt-3">
+                        <div class="col-md-12 mb-4 d-flex justify-content-center flex-wrap flex-column">
+                            <div class="card">
                                 <div class="card-header">
-                                    <h4>Latest Teams</h1>
+                                    <h4>Edit Team</h4>
                                 </div>
-                                <table class="table table-striped">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Name</th>
-                                            <th>Date</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Musical</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Deep Learning</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Big Data</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Artificial Intelligence</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Machine Learning</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Data Science</td>
-                                            <td>30 May 2020</td>
-                                            <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <!-- Pagination -->
-                                <nav class="ml-4">
-                                    <ul class="pagination">
-                                        <li class="page-item-disabled">
-                                            <a href="#" class="page-link">Prev</a>
-                                        </li>
-                                        <li class="page-item active">
-                                            <a href="#" class="page-link">1</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a href="#" class="page-link">2</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a href="#" class="page-link">3</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a href="#" class="page-link">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <div class="card-body px-5">
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <label for="Team">Team</label>
+                                            <div class="input-group">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-info">
+                                                        <i class="fas fa-users"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="text" name="team" id="team"
+                                                    class="form-control p-4" placeholder="Team" value="Soprano"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Category">Category</label>
+                                            <div class="input-group">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-secondary">
+                                                        <i class="far fa-folder-open"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="text" name="category" id="category"
+                                                    class="form-control p-4" placeholder="Category" value="Musical"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" name="submit" id="submit"
+                                                class="form-control btn-info"><i class="fas fa-check-circle"></i>
+                                                Save
+                                                Changes
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
 
         <footer id="footer" class="bg-dark">
@@ -235,10 +180,13 @@
     <!-- Bootstrap JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
+    <!-- Ckeditor CDN -->
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
         // Get Full Year
         $('#year').text(new Date().getFullYear());
+
     </script>
 </body>
 
