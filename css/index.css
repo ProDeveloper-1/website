@@ -91,15 +91,11 @@ body {
     font-family: 'Advent Pro', sans-serif;
 }
 
-@media (min-width: 768px) {
-    #admin-panel #card-table {
-        margin-top: -192px;
-    }
-}
-
-@media (min-width: 900px) {
-    #admin-panel #card-table {
-        margin-top: -125px;
+@media (max-width: 360px) {
+    #admin-panel #small {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap column;
     }
 }
 
