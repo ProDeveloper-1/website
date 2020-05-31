@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/teams.css">
+    <link rel="stylesheet" href="css/categories.css">
 </head>
 
 <body id="home">
@@ -39,8 +39,8 @@
                     <li class="nav-item px-2">
                         <a href="index.html" class="nav-link">Dashboard</a>
                     </li>
-                    <li class="nav-item active px-2">
-                        <a href="#home" class="nav-link">Teams</a>
+                    <li class="nav-item px-2">
+                        <a href="teams.html" class="nav-link">Teams</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="categories.html" class="nav-link">Categories</a>
@@ -51,8 +51,8 @@
                     <li class="nav-item px-2">
                         <a href="#" class="nav-link">Reports</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a href="attendance.html" class="nav-link">Attendance</a>
+                    <li class="nav-item active px-2">
+                        <a href="#home" class="nav-link">Attendance</a>
                     </li>
                 </ul>
 
@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="text-info">
-                        <i class="fas fa-users text-dark"></i> Teams
+                        <i class="far fa-address-book text-dark"></i> Attendance
                     </h1>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                     <div class="row">
                         <div class="col-md-6 ml-auto">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Team...">
+                                <input type="text" class="form-control" placeholder="Search Attendance per day...">
                                 <div class="input-group-append">
                                     <button class="btn btn-info">Search</button>
                                 </div>
@@ -113,76 +113,124 @@
                         <div class="col-md-12 d-flex justify-content-center flex-wrap flex-column">
                             <div class="card" id="card-table">
                                 <div class="card-header">
-                                    <h4>Latest Teams</h1>
+                                    <h4>Class Attendance | <span class="text-info">Monday</span></h1>
                                 </div>
                                 <table class="table table-striped">
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>#</th>
-                                            <th>Name</th>
-                                            <th>Category</th>
-                                            <th></th>
+                                            <th>Student</th>
+                                            <th>Present</th>
+                                            <th>Absent</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Soprano</td>
-                                            <td>Musical</td>
+                                            <td>Prosper Mbuma</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Techub</td>
-                                            <td>Deep Learning</td>
+                                            <td>Prosperity Success Mafanikio</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Statiko</td>
-                                            <td>Big Data</td>
+                                            <td>Prosperous Nicholas</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>CanItdo</td>
-                                            <td>Artificial Intelligence</td>
+                                            <td>Prospers Excel Mbuma</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>EvenGrt</td>
-                                            <td>Machine Learning</td>
+                                            <td>Prospering Nicholas Mbuma</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
-                                            <td>Avengers</td>
-                                            <td>Data Science</td>
+                                            <td>Prospered Mbuma</td>
                                             <td>
-                                                <a href="#" class="btn btn-secondary">
-                                                    <i class="fas fa-angle-double-right"></i> Details
-                                                </a>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="" id="">
+                                                    </div>
+                                                </form>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -208,15 +256,17 @@
                                         </li>
                                     </ul>
                                 </nav>
+                                <div class="ml-auto mr-2 mb-2">
+                                    <button class="btn btn-secondary px-5">Print</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
 
-        <footer id="footer" class="bg-dark">
+        <footer id="footer" class="bg-dark footer">
             <div class="row py-3 text-center">
                 <p class="col-md-4">
                     <a href="http://" target="_blank" class="px-2"><i class="fab fa-facebook"></i></a>
@@ -228,6 +278,7 @@
             </div>
         </footer>
     </div>
+
 
     <!-- Jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
