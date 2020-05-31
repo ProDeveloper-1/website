@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/team.css">
 </head>
 
 <body id="home">
@@ -36,11 +36,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item active px-2">
-                        <a href="#home" class="nav-link">Dashboard</a>
-                    </li>
                     <li class="nav-item px-2">
-                        <a href="team.html" class="nav-link">Team</a>
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item active px-2">
+                        <a href="#home" class="nav-link">Team</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="categories.html" class="nav-link">Categories</a>
@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="text-info">
-                        <i class="fas fa-cog text-dark"></i> Dashboard
+                        <i class="fas fa-users text-dark"></i> Team
                     </h1>
                 </div>
             </div>
@@ -95,20 +95,13 @@
             <section id="add" class="py-4 bg-light">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-info btn-block">
-                                <i class="fas fa-plus text-dark"></i> Create team
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-info btn-block">
-                                <i class="fas fa-plus text-dark"></i> Add categories
-                            </a>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="btn btn-info btn-block">
-                                <i class="fas fa-plus text-dark"></i> Add student
-                            </a>
+                        <div class="col-md-6 ml-auto">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Team...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-info">Search</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,16 +110,16 @@
             <section id="admin-panel" class="py-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-9 d-flex justify-content-center flex-wrap flex-column">
+                        <div class="col-md-12 d-flex justify-content-center flex-wrap flex-column">
                             <div class="card" id="card-table">
                                 <div class="card-header">
-                                    <h4>Latest Categories</h1>
+                                    <h4>Latest Teams</h1>
                                 </div>
                                 <table class="table table-striped">
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>#</th>
-                                            <th>Title</th>
+                                            <th>Name</th>
                                             <th>Date</th>
                                             <th></th>
                                         </tr>
@@ -194,40 +187,33 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card mb-3 bg-light text-center">
-                                <div class="card-body">
-                                    <h3 class="text-info">Team</h3>
-                                    <h4 class="display-4 text-info">
-                                        <i class="fas fa-users"></i> 9
-                                    </h4>
-                                    <a href="team.html" class="btn btn-outline-info">View</a>
-                                </div>
-                            </div>
-                            <div class="card mb-3 bg-info text-light text-center">
-                                <div class="card-body">
-                                    <h3>Categories</h3>
-                                    <h4 class="display-4">
-                                        <i class="fas fa-folder-open"></i> 6
-                                    </h4>
-                                    <a href="categories.html" class="btn btn-outline-light">View</a>
-                                </div>
-                            </div>
-                            <div class="card mb-3 bg-light text-center border-info">
-                                <div class="card-body">
-                                    <h3 class="text-muted">Students</h3>
-                                    <h4 class="display-4 text-muted">
-                                        <i class="fas fa-users"></i> 4
-                                    </h4>
-                                    <a href="students.html" class="btn btn-secondary">View</a>
-                                </div>
+
+                                <!-- Pagination -->
+                                <nav class="ml-4">
+                                    <ul class="pagination">
+                                        <li class="page-item-disabled">
+                                            <a href="#" class="page-link">Prev</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
         </div>
 
         <footer id="footer" class="bg-dark">
