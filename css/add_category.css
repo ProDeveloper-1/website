@@ -88,12 +88,13 @@ body {
 ======================================*/
 
 #admin-panel .card {
-    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: 'Philosopher', sans-serif;
 }
 
-/* #admin-panel ::placeholder {
-    color: #f8f9fa; 
-} */
+#admin-panel ::placeholder {
+    font-family: 'Advent Pro', sans-serif;
+}
 
 @media (min-width: 768px) {
     #admin-panel #card-table {
@@ -117,6 +118,7 @@ body {
 /* =====================================
 # Footer
 ======================================*/
+
 footer {
     color: #908e8e;
     position: absolute;
@@ -129,7 +131,6 @@ footer {
     footer {
         height: 9rem;
     }
-
     footer .fab {
         padding-top: 12px;
     }

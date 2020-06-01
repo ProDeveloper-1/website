@@ -27,9 +27,14 @@ body {
     }
 }
 
+::placeholder {
+    font-family: 'Philosopher', sans-serif;
+}
+
 /* =====================================
 # Navigation
 ======================================*/
+
 .navbar-brand {
     font-family: 'Marmelad', sans-serif;
 }
@@ -87,7 +92,8 @@ body {
 ======================================*/
 
 #admin-panel .card {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
 }
 
 @media (max-width:760px) {
@@ -100,6 +106,7 @@ body {
 /* =====================================
 # Footer
 ======================================*/
+
 footer {
     color: #908e8e;
     position: absolute;
@@ -112,7 +119,6 @@ footer {
     footer {
         height: 9rem;
     }
-
     footer .fab {
         padding-top: 12px;
     }

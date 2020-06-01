@@ -74,7 +74,8 @@ body {
 }
 
 #add .btn {
-    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: 'Philosopher', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -88,7 +89,8 @@ body {
 ======================================*/
 
 #admin-panel .card {
-    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: 'Philosopher', sans-serif;
 }
 
 @media (max-width: 360px) {
@@ -109,6 +111,7 @@ body {
 /* =====================================
 # Footer
 ======================================*/
+
 footer {
     color: #908e8e;
     position: absolute;
@@ -121,7 +124,6 @@ footer {
     footer {
         height: 9rem;
     }
-
     footer .fab {
         padding-top: 12px;
     }
