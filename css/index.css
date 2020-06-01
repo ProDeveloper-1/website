@@ -93,18 +93,19 @@ body {
     font-family: 'Philosopher', sans-serif;
 }
 
-@media (max-width: 360px) {
-    #admin-panel #small {
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap column;
-    }
-}
-
 @media (max-width:760px) {
     #admin-panel #card-table {
         margin-top: 0px;
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 360px) {
+    tr, th, td {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap column;
+        flex-basis: 100%;
     }
 }
 

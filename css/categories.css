@@ -103,6 +103,15 @@ body {
     }
 }
 
+@media (max-width: 360px) {
+    tr, th, td {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap column;
+        flex-basis: 100%;
+    }
+}
+
 /* =====================================
 # Footer
 ======================================*/

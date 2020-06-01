@@ -103,9 +103,19 @@ body {
     }
 }
 
+@media (max-width: 361px) {
+    tr, th, td {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap column;
+        flex-basis: 100%;
+    }
+}
+
 /* =====================================
 # Footer
 ======================================*/
+
 footer {
     color: #908e8e;
     position: absolute;
@@ -118,7 +128,6 @@ footer {
     footer {
         height: 9rem;
     }
-
     footer .fab {
         padding-top: 12px;
     }
@@ -128,7 +137,6 @@ footer p {
     font-family: 'Marvel', sans-serif;
     font-size: 17px;
 }
-
 
 footer .fab {
     color: #767676;

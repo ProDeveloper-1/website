@@ -103,11 +103,12 @@ body {
     }
 }
 
-@media (max-width: 760px) {
-    #admin-panel tr {
+@media (max-width: 567px) {
+    #admin-panel tr, td {
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
+        flex-basis: 100%;
     }
 }
 
